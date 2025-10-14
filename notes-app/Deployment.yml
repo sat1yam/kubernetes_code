@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: notes-app
-          image: satyam120/notes-app:latest
-          command: ["python"]
-          args: ["manage.py", "runserver", "0.0.0.0:3000"]
+          image: satyam120/nginx_app:latest
+          #command: ["python"]
+          #args: ["manage.py", "runserver", "0.0.0.0:3000"]
           ports:
-            - containerPort: 3000
+            - containerPort: 80
 
