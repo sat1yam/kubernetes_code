@@ -6,7 +6,7 @@ metadata:
 spec:
   project: nginx-app
   source:
-    repoURL: https://github.com/satyam120/notes-app.git
+    repoURL: https://github.com/sat1yam/kubernetes_code.git
     targetRevision: main
     path: notes-app
   destination:
