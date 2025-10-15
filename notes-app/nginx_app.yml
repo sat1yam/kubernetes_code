@@ -1,0 +1,18 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata: 
+  name: nginx-app
+  namespace: argocd
+spec:
+  project: nginx-app
+  source:
+    repoURL: 'https://github.com/satyam120/notes-app.git'
+    targetRevision: main
+    path: notes-app
+  destination:
+    server: 'https://172.20.0.4:6443'
+    namespace: nginx
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
