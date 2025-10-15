@@ -1,7 +1,7 @@
 kind: Application
 apiVersion: argoproj.io/v1alpha1
 metadata: 
-  name: nginx-app
+  name: notes-app
   namespace: argocd
 spec:
   project: default
