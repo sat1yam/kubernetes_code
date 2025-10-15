@@ -1,17 +1,17 @@
 kind: Application
 apiVersion: argoproj.io/v1alpha1
 metadata: 
-  name: nginx-app
+  name: notes-app
   namespace: argocd
 spec:
-  project: nginx-app
+  project: notes-app
   source:
     repoURL: https://github.com/sat1yam/kubernetes_code.git
     targetRevision: main
     path: notes-app
   destination:
     server: https://172.20.0.4:6443
-    namespace: default
+    namespace: nginx
   syncPolicy:
     automated:
       prune: true
