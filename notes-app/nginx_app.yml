@@ -4,7 +4,7 @@ metadata:
   name: notes-app
   namespace: argocd
 spec:
-  project: notes-app
+  project: nginx-app
   source:
     repoURL: https://github.com/sat1yam/kubernetes_code.git
     targetRevision: main
